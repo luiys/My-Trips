@@ -11,6 +11,7 @@
     "test:watch": "yarn test --watch"
   },
   "dependencies": {
+    "@styled-icons/evaicons-outline": "^10.18.0",
     "eslint-config-prettier": "^8.1.0",
     "leaflet": "^1.7.1",
     "next": "10.1.3",
