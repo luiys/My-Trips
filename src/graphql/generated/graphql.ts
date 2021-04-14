@@ -2869,12 +2869,37 @@ export type GetPageBySlugQuery = (
   )> }
 );
 
-export type GetPlacesQueryVariables = Exact<{ [key: string]: never; }>;
+export type GetPlacesQueryVariables = Exact<{
+  first?: Maybe<Scalars['Int']>;
+}>;
 
 
 export type GetPlacesQuery = (
   { __typename?: 'Query' }
   & { places: Array<(
+    { __typename?: 'Place' }
+    & Pick<Place, 'id' | 'slug' | 'name'>
+    & { location: (
+      { __typename?: 'Location' }
+      & Pick<Location, 'latitude' | 'longitude'>
+    ), description?: Maybe<(
+      { __typename?: 'RichText' }
+      & Pick<RichText, 'html'>
+    )>, gallery: Array<(
+      { __typename?: 'Asset' }
+      & Pick<Asset, 'url' | 'width' | 'height'>
+    )> }
+  )> }
+);
+
+export type GetPlaceBySlugQueryVariables = Exact<{
+  slug?: Maybe<Scalars['String']>;
+}>;
+
+
+export type GetPlaceBySlugQuery = (
+  { __typename?: 'Query' }
+  & { place?: Maybe<(
     { __typename?: 'Place' }
     & Pick<Place, 'id' | 'slug' | 'name'>
     & { location: (
