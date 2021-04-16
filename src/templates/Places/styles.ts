@@ -24,23 +24,25 @@ export const Body = styled.div`
 export const Gallery = styled.div`
   display: grid;
   grid-gap: var(--medium);
+  width: auto;
+  height: auto;
   img {
-    background: #f6f7f8;
+    background: #212121;
     background-image: linear-gradient(
       to right,
-      #f6f7f8 0%,
-      #edeef1 20%,
-      #f6f7f8 40%,
-      #f6f7f8 100%
+      #212121 0%,
+      #292929 20%,
+      #212121 40%,
+      #212121 100%
     );
-    background-size: 80rem 14rem;
-    animation: placeholderShimmer 1s linear infinite forwards;
+    background-size: 700px auto;
+    animation: placeholderShimmer 7s linear infinite forwards;
     @keyframes placeholderShimmer {
       0% {
-        background-position: -40rem 0;
+        background-position: -700px 0;
       }
       100% {
-        background-position: 40rem 0;
+        background-position: 700px 0;
       }
     }
   }

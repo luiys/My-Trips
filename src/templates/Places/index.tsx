@@ -70,14 +70,18 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 
           <S.Gallery>
             {place.gallery.map((image, index) => {
+              // const proportion = 1000 / image.height
+              // const height = image.height * proportion
+
               return (
                 <Image
                   src={image.url}
                   alt={place.name}
                   key={index}
-                  width={1000}
-                  height={600}
+                  width={image.width}
+                  height={image.height}
                   quality={75}
+                  objectFit="contain"
                 />
               )
             })}
