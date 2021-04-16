@@ -1,6 +1,6 @@
 import { GraphQLClient } from 'graphql-request'
 
-const endpoint = process.env.GRAPHQL_HOST || ''
+const endpoint = process.env.GRAPHQL_HOST || 'http://localhost:3000'
 
 const client = new GraphQLClient(endpoint, {
   headers: {
