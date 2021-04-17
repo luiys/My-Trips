@@ -8,7 +8,7 @@ import { MapProps } from 'components/Map'
 const Map = dynamic(() => import('components/Map'), { ssr: false })
 
 export default function HomeTemplate({ places }: MapProps) {
-  const base_url = 'https://my-trips.com'
+  const base_url = 'https://my-trips-five.vercel.app.com'
 
   return (
     <>

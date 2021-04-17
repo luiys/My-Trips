@@ -26,7 +26,7 @@ export type PlacesTemplateProps = {
 
 export default function PlacesTemplate({ place }: PlacesTemplateProps) {
   const router = useRouter()
-  const base_url = 'https://my-trips.com'
+  const base_url = 'https://my-trips-five.vercel.app.com'
 
   if (router.isFallback) return null
 

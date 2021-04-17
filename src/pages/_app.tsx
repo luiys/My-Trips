@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
           crossOrigin=""
         />
 
-        <meta name="theme-color" content="#06092B" />
+        <meta name="theme-color" content="#212121" />
       </Head>
       <DefaultSeo {...SEO} />
       <GlobalStyles />
